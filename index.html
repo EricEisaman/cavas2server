@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta property="og:title" content="canvas2server"/>
+    <meta property="og:image" content="https://cdn.glitch.com/654d674a-0525-4074-a1a7-08aa262192e5%2Ftitle.png"/>
+    <meta property="og:description" content="Example showing basic mechanics of sending a user made canvas image to all connected clients."/>
+    <meta property="og:url" content="//canvas2server.glitch.me/" />
+  <link href="https://fonts.googleapis.com/css?family=Hanalei Fill" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="client.css">
+</head>
+<body>
+<div style="margin:20px">
+  <h1>Canvas<bigred>2</bigred>Server</h1>
+  <input id="key" placeholder="Enter key">
+  <input type="button" class="button green" value="canvas2server" id="btn" size="30" onclick="canvas2server()">
+  <input type="button" class="button blue" value="clear" id="clr" size="23" onclick="erase()">
+  <canvas id="can" width="200" height="200" style="border: 1px solid blue; display:block" ></canvas>
+</div>  
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+<script src="simple-draw.js"></script>
+<script src="autoscroll.js"></script>
+</body>  
+</html>
